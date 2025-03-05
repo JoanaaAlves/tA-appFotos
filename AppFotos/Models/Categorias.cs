@@ -5,5 +5,7 @@
     ///</summary> 
     public class Categorias
     {
+
+        public int Id { get; set; }
     }
 }
