@@ -109,13 +109,13 @@ namespace AppFotos.Data.Migrations
                         column: x => x.ListaComprasId,
                         principalTable: "Compras",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_ComprasFotografias_Fotografias_ListaFotografiasCompradasId",
                         column: x => x.ListaFotografiasCompradasId,
                         principalTable: "Fotografias",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -134,13 +134,13 @@ namespace AppFotos.Data.Migrations
                         column: x => x.FotografiaFK,
                         principalTable: "Fotografias",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_Gostos_Utilizadores_UtilizadorFK",
                         column: x => x.UtilizadorFK,
                         principalTable: "Utilizadores",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateIndex(
